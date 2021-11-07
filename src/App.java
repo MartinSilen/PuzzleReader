@@ -8,12 +8,12 @@ public class App {
         while (true) {
             try {
                 System.out.println("Type in the file name:");
-                String cm = com.nextLine();
-                result = Reader.read(cm);
+                String command = com.nextLine();
+                result = Reader.read(command);
                 break;
             } catch (Exception e) {
                 System.out.println("Wrong Filename!");
-                continue;
+                
             }
         }
         System.out.println(result);
